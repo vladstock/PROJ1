@@ -1,0 +1,73 @@
+/* Hamburger menu*/
+
+@media screen and (max-width: 1025px) {
+    .hamburger {
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top:30%;
+      z-index: 2;
+    }
+    .line {
+        width: 30px;
+        height: 3px;
+        background: $textcolor2;
+        margin: 5px;
+        @include mq(320) { 
+            width: 20px;
+            height: 2.5px;
+        }
+      }
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(100px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+      width: 50vw;
+      height: 100vh;
+      @include mq(426) { 
+        width: 100vw;
+      }
+    }
+    .nav-links.open {
+      background: #034e80;
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+      width: 50vw;
+      height: 100vh;
+      padding-left: 0;
+      @include mq(426) { 
+        width: 100vw;
+      }
+    }
+    .nav-links li {
+      opacity: 0;
+    }
+    .nav-links li a {
+      font-size: 25px;
+    }
+    .nav-links li:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+      padding-top: 15%;
+    }
+    .nav-links li:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.8s;
+        padding-bottom: 35%;
+      }
+    li.fade {
+      opacity: 1;
+    }
+}

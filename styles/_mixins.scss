@@ -1,0 +1,32 @@
+
+@mixin mq($mq) {
+  @if $mq == 320  { @media (max-width: 320px)  { @content; } }
+  @if $mq == 376  { @media (max-width: 376px)  { @content; } }
+  @if $mq == 415  { @media (max-width: 415px)  { @content; } }
+  @if $mq == 426  { @media (max-width: 426px)  { @content; } }
+  @if $mq == 479  { @media (max-width: 479px)  { @content; } }
+  @if $mq == 569  { @media (max-width: 569px)  { @content; } }
+  @if $mq == 679  { @media (max-width: 679px)  { @content; } }
+  @if $mq == 767  { @media (max-width: 767px)  { @content; } }
+  @if $mq == 769  { @media (max-width: 769px)  { @content; } }
+  @if $mq == 830  { @media (max-width: 830px)  { @content; } }
+  @if $mq == 979  { @media (max-width: 979px)  { @content; } }
+  @if $mq == 1025  { @media (max-width: 1025px)  { @content; } }
+  @if $mq == 1219  { @media (max-width: 1219px)  { @content; } }
+  @if $mq == 1320  { @media (max-width: 1320px)  { @content; } }
+  @if $mq == 1440  { @media (max-width: 1440px)  { @content; } }
+
+  @if $mq == retina {
+    @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (   min--moz-device-pixel-ratio: 2),
+      only screen and (     -o-min-device-pixel-ratio: 2/1),
+      only screen and (        min-device-pixel-ratio: 2),
+      only screen and (                min-resolution: 192dpi),
+      only screen and (                min-resolution: 2dppx) {
+        @content;
+    }
+  }
+}
+
+@mixin limiter{display: block; max-width: 1220px; margin: 0 auto; position: relative;}
