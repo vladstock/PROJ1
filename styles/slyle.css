@@ -116,7 +116,7 @@ body header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("/img/bannerr.jpg");
+  background-image: url("./img/bannerr.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -192,7 +192,6 @@ body header .header__line .header__wrapper .header__container .header__logo .log
   max-width: 300px;
   min-width: 200px;
   margin-top: -48px;
-  width: 80vw;
 }
 
 @media (max-width: 479px) {
@@ -494,7 +493,7 @@ body .main .info {
   padding-top: 5vh;
   padding-bottom: 5vh;
   margin: 0 0;
-  background-image: url("/img/texture.png");
+  background-image: url("./img/texture.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -722,7 +721,7 @@ body .main .services .our_serv .serv .wrapper.showContent a {
 
 body .main .career {
   padding: 5%  13%;
-  background-image: url("/img/Career.jpg");
+  background-image: url("./img/Career.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -789,7 +788,7 @@ body .main .career a {
 
 body .main .contacts {
   padding: 5%  20%;
-  background-image: url("/img/texture_form.png");
+  background-image: url("./img/texture_form.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
