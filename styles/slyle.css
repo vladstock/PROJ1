@@ -464,7 +464,7 @@ body .main .info {
   padding-top: 5vh;
   padding-bottom: 5vh;
   margin: 0 0;
-  background-image: url("../img/texture.png");
+  background-image: url("../img/texture.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -759,7 +759,7 @@ body .main .career a {
 
 body .main .contacts {
   padding: 5%  20%;
-  background-image: url("../img/texture_form.png");
+  background-image: url("../img/texture_form.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
